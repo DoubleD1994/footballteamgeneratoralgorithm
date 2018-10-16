@@ -15,15 +15,15 @@ public class TestFootballTeamSelectionAlgorithm {
 
 	private GroupOfPlayers groupOfPlayers;
 	private FairTeamSorter fairTeamAlgorithm;
-	private TeamFitnessCalculator fairTeamFitnessCalculator;
-	private Player john = new Player("John", 20, 20, 20, 20, 20);
-	private Player steve = new Player("Steve", 20, 20, 20, 20, 20);
+	private Player john;
+	private Player steve;
 	
 	@Before
 	public void setUp() throws Exception {
 		groupOfPlayers = new GroupOfPlayers();
 		fairTeamAlgorithm = new FairTeamAlgorithm();
-		fairTeamFitnessCalculator = new FairTeamFitnessCalculator();
+		john  = new Player("John", 20, 20, 20, 20, 20);
+		steve = new Player("Steve", 20, 20, 20, 20, 20);
 		groupOfPlayers.addPlayerToPlayingGroup(john);
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("Bob", 10, 10, 10, 10, 10));
 		groupOfPlayers.addPlayerToPlayingGroup(steve);
@@ -36,12 +36,4 @@ public class TestFootballTeamSelectionAlgorithm {
 		assertTrue(theTeams.size() == 2);
 	}
 	
-	@Test
-	public void test_AlgorithmCanGenerateFairTeams() {
-		List<Team> theTeams = fairTeamAlgorithm.getFairTeams(groupOfPlayers);
-		Team teamOne = theTeams.get(0);
-		boolean result = !(teamOne.getTeamPlayers().contains(john) && teamOne.getTeamPlayers().contains(steve));
-		assertTrue(result);
-	}
-
 }
