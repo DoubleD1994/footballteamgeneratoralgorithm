@@ -15,7 +15,7 @@ public class SplitGroupOfPlayersIntoTwoTeamsTest {
 	private PlayersGroup groupOfPlayers;
 	private Team teamOne;
 	private Team teamTwo;
-	private GenerateTeams generateTeams;
+	private TeamGenerator generateTeams;
 	
 	@Before
 	public void setUp() throws Exception {
@@ -25,7 +25,7 @@ public class SplitGroupOfPlayersIntoTwoTeamsTest {
 		for(int i = 0; i<10; i++) {
 			groupOfPlayers.addPlayerToPlayingGroup(testPlayer);
 		}
-		generateTeams = new TeamGenerator();
+		generateTeams = new GenerateTeams();
 	}
 
 	@Test

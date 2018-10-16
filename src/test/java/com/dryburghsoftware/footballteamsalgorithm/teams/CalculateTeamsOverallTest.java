@@ -15,7 +15,7 @@ public class CalculateTeamsOverallTest {
 	@Before
 	public void setUp() throws Exception {
 		teamOne = new Team("Team One");
-		for(int i = 0; i<=5; i++) {
+		for(int i = 0; i<5; i++) {
 			teamOne.addTeamPlayer(new Player("John", 10, 10, 10, 10, 10));
 		}
 		teamOverallCalculator = new TeamOverallCalculator();
