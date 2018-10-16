@@ -7,7 +7,7 @@ import com.dryburghsoftware.footballteamsalgorithm.teams.GenerateTeams;
 import com.dryburghsoftware.footballteamsalgorithm.teams.Team;
 import com.dryburghsoftware.footballteamsalgorithm.teams.TeamGenerator;
 
-public class FairTeamAlgorithm implements fairTeamSorter{
+public class FairTeamAlgorithm implements FairTeamSorter{
 
 	private List<Team> theTeams;
 	

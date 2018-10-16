@@ -14,14 +14,16 @@ import com.dryburghsoftware.footballteamsalgorithm.teams.Team;
 public class TestFootballTeamSelectionAlgorithm {
 
 	private GroupOfPlayers groupOfPlayers;
-	private fairTeamSorter fairTeamAlgorithm;
-	
+	private FairTeamSorter fairTeamAlgorithm;
+	private TeamFitnessCalculator fairTeamFitnessCalculator;
 	
 	
 	@Before
 	public void setUp() throws Exception {
 		groupOfPlayers = new GroupOfPlayers();
 		fairTeamAlgorithm = new FairTeamAlgorithm();
+		fairTeamFitnessCalculator = new FairTeamFitnessCalculator();
+		
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("John", 20, 20, 20, 20, 20));
 		for(int i=0; i<7; i++) {
 			groupOfPlayers.addPlayerToPlayingGroup(new Player("Bob", 10, 10, 10, 10, 10));
@@ -34,6 +36,13 @@ public class TestFootballTeamSelectionAlgorithm {
 	public void test_AlgorithmReturnsTwoTeams() {
 		List<Team> theTeams = fairTeamAlgorithm.getFairTeams(groupOfPlayers);
 		assertTrue(theTeams.size() == 2);
+	}
+	
+	@Test
+	public void test_AlgorithmCanCalculateDifferenceBetweenTwoTeams() {
+		List<Team> theTeams = fairTeamAlgorithm.getFairTeams(groupOfPlayers);
+		double differenceInTeamOverall = fairTeamFitnessCalculator.calculateDiferenceInTeamQuality(theTeams);
+		assertTrue(differenceInTeamOverall == 20);
 	}
 
 }
