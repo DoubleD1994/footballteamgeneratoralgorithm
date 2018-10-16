@@ -27,8 +27,7 @@ public class TestFootballTeamSelectionAlgorithm {
 			groupOfPlayers.addPlayerToPlayingGroup(new Player("Bob", 10, 10, 10, 10, 10));
 		}
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("Steve", 20, 20, 20, 20, 20));
-		groupOfPlayers.addPlayerToPlayingGroup(new Player("Bob", 10, 10, 10, 10, 10));
-		
+		groupOfPlayers.addPlayerToPlayingGroup(new Player("Bob", 10, 10, 10, 10, 10));		
 	}
 
 	@Test
