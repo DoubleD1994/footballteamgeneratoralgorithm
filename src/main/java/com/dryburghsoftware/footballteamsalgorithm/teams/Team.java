@@ -34,6 +34,6 @@ public class Team {
 
 	@Override
 	public String toString() {
-		return "Team [teamName=" + teamName + ", teamPlayers=" + teamPlayers + "]";
+		return "\nteamName: " + teamName + "\nteamPlayers:\n" + teamPlayers;
 	}
 }

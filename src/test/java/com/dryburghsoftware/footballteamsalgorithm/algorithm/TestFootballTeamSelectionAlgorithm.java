@@ -9,13 +9,14 @@ import org.junit.Test;
 
 import com.dryburghsoftware.footballteamsalgorithm.players.GroupOfPlayers;
 import com.dryburghsoftware.footballteamsalgorithm.players.Player;
+import com.dryburghsoftware.footballteamsalgorithm.players.PlayersGroup;
 import com.dryburghsoftware.footballteamsalgorithm.teams.OverallCalculator;
 import com.dryburghsoftware.footballteamsalgorithm.teams.Team;
 import com.dryburghsoftware.footballteamsalgorithm.teams.TeamOverallCalculator;
 
 public class TestFootballTeamSelectionAlgorithm {
 
-	private GroupOfPlayers groupOfPlayers;
+	private PlayersGroup groupOfPlayers;
 	private FairTeamSorter fairTeamAlgorithm;
 	private Player john;
 	private Player steve;

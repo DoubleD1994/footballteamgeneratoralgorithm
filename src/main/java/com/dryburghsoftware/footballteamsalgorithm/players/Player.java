@@ -72,12 +72,6 @@ public class Player {
 	public int getOverall() {
 		return overall;
 	}
-
-	@Override
-	public String toString() {
-		return "Player [name=" + name + ", shooting=" + shooting + ", passing=" + passing + ", tackling=" + tackling
-				+ ", pace=" + pace + ", dribbling=" + dribbling + "]";
-	}
 	
 	private void calculatePlayerOverall() {
 		 this.overall = this.shooting +
@@ -85,5 +79,10 @@ public class Player {
 				 		this.passing +
 				 		this.pace +
 				 		this.dribbling;
+	}
+	
+	@Override
+	public String toString() {
+		return "\nname = " + name + "\toverall = " + overall;
 	}
 }

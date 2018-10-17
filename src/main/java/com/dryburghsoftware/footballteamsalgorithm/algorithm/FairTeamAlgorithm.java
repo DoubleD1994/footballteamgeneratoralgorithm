@@ -3,6 +3,7 @@ package com.dryburghsoftware.footballteamsalgorithm.algorithm;
 import java.util.List;
 
 import com.dryburghsoftware.footballteamsalgorithm.players.GroupOfPlayers;
+import com.dryburghsoftware.footballteamsalgorithm.players.PlayersGroup;
 import com.dryburghsoftware.footballteamsalgorithm.teams.GenerateTeams;
 import com.dryburghsoftware.footballteamsalgorithm.teams.Team;
 import com.dryburghsoftware.footballteamsalgorithm.teams.TeamGenerator;
@@ -23,7 +24,7 @@ public class FairTeamAlgorithm implements FairTeamSorter{
 		playerSwap = new PlayerSwapper();
 	}
 	
-	public List<Team> getFairTeams(GroupOfPlayers groupOfPlayers) {
+	public List<Team> getFairTeams(PlayersGroup groupOfPlayers) {
 		createTwoTeams(groupOfPlayers);
 		parentFitness = teamFitnessCalculator.calculateDiferenceInTeamQuality(theTeams);
 		runAlgorithmUntilTeamsAreFair();
@@ -49,7 +50,7 @@ public class FairTeamAlgorithm implements FairTeamSorter{
 		}
 	}
 	
-	private void createTwoTeams(GroupOfPlayers groupOfPlayers) {
+	private void createTwoTeams(PlayersGroup groupOfPlayers) {
 		teamGenerator.splitGroupOfPlayersIntoTeams(groupOfPlayers);
 		theTeams = teamGenerator.returnBothTeams();
 	}
