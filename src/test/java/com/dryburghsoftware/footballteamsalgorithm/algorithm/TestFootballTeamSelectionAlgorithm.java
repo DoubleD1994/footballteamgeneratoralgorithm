@@ -31,8 +31,8 @@ public class TestFootballTeamSelectionAlgorithm {
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("B", 15, 15, 15, 15, 15));
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("C", 20, 20, 20, 20, 20));
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("D", 10, 10, 10, 10, 10));
-		groupOfPlayers.addPlayerToPlayingGroup(new Player("E", 10, 10, 10, 10, 10));
-		groupOfPlayers.addPlayerToPlayingGroup(new Player("F", 15, 15, 15, 15, 15));
+		groupOfPlayers.addPlayerToPlayingGroup(new Player("E", 15, 15, 15, 15, 15));
+		groupOfPlayers.addPlayerToPlayingGroup(new Player("F", 10, 10, 10, 10, 10));
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("G", 5, 5, 5, 5, 5));
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("H", 1, 1, 1, 1, 1));
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("I", 5, 5, 5, 5, 5));

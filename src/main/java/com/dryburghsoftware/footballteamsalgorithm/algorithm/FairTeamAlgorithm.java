@@ -26,8 +26,27 @@ public class FairTeamAlgorithm implements FairTeamSorter{
 	public List<Team> getFairTeams(GroupOfPlayers groupOfPlayers) {
 		createTwoTeams(groupOfPlayers);
 		parentFitness = teamFitnessCalculator.calculateDiferenceInTeamQuality(theTeams);
-		theTeams = playerSwap.swapOnePlayerFromEachTeam(theTeams);
+		runAlgorithmUntilTeamsAreFair();
 		return theTeams;
+	}
+
+	private void runAlgorithmUntilTeamsAreFair() {
+		for(int i=0; i<1000; i++) {
+			if(parentFitness == 0){ break; }
+			swapPlayerAndCalculateFitnessOfNewTeam();
+		}
+	}
+
+	private void swapPlayerAndCalculateFitnessOfNewTeam() {
+		theTeams = playerSwap.swapOnePlayerFromEachTeam(theTeams);
+		childFitness = teamFitnessCalculator.calculateDiferenceInTeamQuality(theTeams);
+		isChildFitnessBetterThanParentFitness();
+	}
+
+	private void isChildFitnessBetterThanParentFitness() {
+		if(childFitness < parentFitness) {
+			parentFitness = childFitness;
+		}
 	}
 	
 	private void createTwoTeams(GroupOfPlayers groupOfPlayers) {
