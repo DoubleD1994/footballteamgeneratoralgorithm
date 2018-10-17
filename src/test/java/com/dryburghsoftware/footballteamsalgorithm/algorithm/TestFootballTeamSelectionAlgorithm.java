@@ -27,7 +27,7 @@ public class TestFootballTeamSelectionAlgorithm {
 		fairTeamAlgorithm = new FairTeamAlgorithm();
 		teamOverallCalculator = new TeamOverallCalculator();
 		
-		groupOfPlayers.addPlayerToPlayingGroup(new Player("A", 20, 20, 20, 20, 20));
+		groupOfPlayers.addPlayerToPlayingGroup(new Player("A", 19, 19, 19, 19, 19));
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("B", 15, 15, 15, 15, 15));
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("C", 20, 20, 20, 20, 20));
 		groupOfPlayers.addPlayerToPlayingGroup(new Player("D", 10, 10, 10, 10, 10));
@@ -46,12 +46,11 @@ public class TestFootballTeamSelectionAlgorithm {
 	}
 	
 	@Test
-	public void test_AlgorithmCanGenerateFairTeams() {
+	public void test_AlgorithmCanGenerateFairTeamsThatAreWithinReasonableRange() {
 		List<Team> theTeams = fairTeamAlgorithm.getFairTeams(groupOfPlayers);
 		Team teamOne = theTeams.get(0);
 		Team teamTwo = theTeams.get(1);
-		boolean result = teamOverallCalculator.calculateTeamOverall(teamOne) == teamOverallCalculator.calculateTeamOverall(teamTwo);
-		assertTrue(result);
+		double result = teamOverallCalculator.calculateTeamOverall(teamOne) - teamOverallCalculator.calculateTeamOverall(teamTwo);
+		assertTrue(result >=-2 && result<=2);
 	}
-	
 }

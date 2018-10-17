@@ -32,7 +32,7 @@ public class FairTeamAlgorithm implements FairTeamSorter{
 
 	private void runAlgorithmUntilTeamsAreFair() {
 		for(int i=0; i<1000; i++) {
-			if(parentFitness == 0){ break; }
+			if(parentFitness >= 0 && parentFitness <= 2){ break; }
 			swapPlayerAndCalculateFitnessOfNewTeam();
 		}
 	}
