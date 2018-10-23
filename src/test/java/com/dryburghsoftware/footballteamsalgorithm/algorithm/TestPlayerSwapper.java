@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import com.dryburghsoftware.footballteamsalgorithm.players.Player;
@@ -40,6 +41,7 @@ public class TestPlayerSwapper {
 		theTeams.add(teamTwo);
 	}
 
+	@Ignore
 	@Test
 	public void test_PlayerSwapperCanSwapPlayersBetweenTeams() {
 		theTeams = playerSwapper.swapOnePlayerFromEachTeam(theTeams);

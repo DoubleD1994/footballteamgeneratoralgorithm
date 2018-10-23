@@ -1,0 +1,15 @@
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/algorithm/PlayerSwap.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/algorithm/FairTeamFitnessCalculator.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/algorithm/FairTeamSorter.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/algorithm/TeamFitnessCalculator.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/teams/TeamGenerator.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/App.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/teams/Team.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/players/Player.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/algorithm/PlayerSwapper.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/algorithm/FairTeamAlgorithm.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/players/GroupOfPlayers.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/players/PlayersGroup.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/teams/GenerateTeams.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/teams/OverallCalculator.java
+/Users/daviddryburgh/eclipse-workspace/footballteamgeneratoralgorithm/src/main/java/com/dryburghsoftware/footballteamsalgorithm/teams/TeamOverallCalculator.java

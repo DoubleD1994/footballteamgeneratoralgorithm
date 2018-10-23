@@ -4,7 +4,7 @@
 
   <groupId>com.dryburghsoftware</groupId>
   <artifactId>footballteamsalgorithm</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0</version>
   <packaging>jar</packaging>
 
   <name>footballteamsalgorithm</name>
@@ -16,17 +16,11 @@
 
   <dependencies>
   
-  	<dependency>
-		<groupId>org.apache.logging.log4j</groupId>
-		<artifactId>log4j-core</artifactId>
-		<version>2.11.1</version>
-	</dependency>
   
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+      <version>4.11</version>
     </dependency>
   </dependencies>
 </project>
