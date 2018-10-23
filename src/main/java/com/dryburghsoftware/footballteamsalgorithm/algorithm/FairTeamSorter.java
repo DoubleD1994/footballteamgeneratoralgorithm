@@ -8,5 +8,5 @@ import com.dryburghsoftware.footballteamsalgorithm.teams.Team;
 public interface FairTeamSorter {
 
 	public List<Team> getFairTeams(PlayersGroup groupOfPlayers);
-	
+	 
 }
